@@ -15,6 +15,7 @@ export enum CategoryType {
   SOCIAL = 'Social',
   ENTERTAINMENT = 'Entertainment',
   PRODUCTIVITY = 'Productivity',
+  TOOL = '工具'
 }
 
 export interface SearchResult {

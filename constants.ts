@@ -22,20 +22,20 @@ export const CATEGORIES = Object.values(CategoryType);
 export const MOCK_LINKS: LinkItem[] = [
   {
     id: '1',
-    title: 'GitHub',
-    url: 'https://github.com',
+    title: 'Our GitHub',
+    url: 'https://github.com/BetterECNU',
     category: CategoryType.DEVELOPMENT,
     icon: 'Github',
-    description: 'Where the world builds software.',
+    description: '我们的 GitHub',
     color: 'from-gray-700 to-gray-900'
   },
   {
     id: '2',
-    title: 'Figma',
-    url: 'https://figma.com',
-    category: CategoryType.DESIGN,
+    title: 'ECNU·课栈',
+    url: 'https://courses.myecnu.org',
+    category: CategoryType.TOOL,
     icon: 'Figma',
-    description: 'Collaborative interface design tool.',
+    description: '华东师范大学课程共享计划',
     color: 'from-purple-500 to-pink-500'
   },
   {
