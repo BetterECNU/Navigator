@@ -59,7 +59,7 @@ const LinkCard: React.FC<LinkCardProps> = ({ item, index }) => {
       {/* Card Container with 3D Transform */}
       <div
         className={`
-          relative h-full p-6 rounded-2xl border border-white/10 
+          relative h-full p-6 rounded-2xl border border-white/10 overflow-hidden
           bg-white/5 backdrop-blur-md shadow-xl transition-all duration-200 ease-out
           group-hover:shadow-2xl group-hover:shadow-${item.color.split('-')[1]}-500/20
           animate-fade-in-up opacity-0
@@ -71,6 +71,9 @@ const LinkCard: React.FC<LinkCardProps> = ({ item, index }) => {
           transformStyle: 'preserve-3d',
         }}
       >
+        {/* Shimmer Effect */}
+        <div className="absolute inset-0 -translate-x-full group-hover:animate-shimmer bg-gradient-to-r from-transparent via-white/10 to-transparent z-20 pointer-events-none" />
+
         {/* Background Gradient Glow */}
         <div 
           className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} 
