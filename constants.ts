@@ -76,11 +76,11 @@ export const MOCK_LINKS: LinkItem[] = [
   },
   {
     id: '7',
-    title: 'Linear',
-    url: 'https://linear.app',
-    category: CategoryType.PRODUCTIVITY,
+    title: '华东师大•旧闻缓递',
+    url: 'https://times.myecnu.org',
+    category: CategoryType.TOOL,
     icon: 'Trello',
-    description: 'The issue tracking tool you\'ll enjoy using.',
+    description: '当下最新最热通知',
     color: 'from-indigo-500 to-violet-600'
   },
   {
