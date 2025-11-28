@@ -49,29 +49,29 @@ export const MOCK_LINKS: LinkItem[] = [
   },
   {
     id: '4',
-    title: 'Dribbble',
-    url: 'https://dribbble.com',
-    category: CategoryType.DESIGN,
+    title: '公共体育部',
+    url: 'https://peclub.ecnu.edu.cn',
+    category: CategoryType.OFFICIAL,
     icon: 'Dribbble',
-    description: 'Discover the world’s top designers.',
+    description: '公体的网站，在上面预约体测',
     color: 'from-pink-400 to-rose-500'
   },
   {
     id: '5',
-    title: 'Twitter/X',
-    url: 'https://twitter.com',
-    category: CategoryType.SOCIAL,
+    title: '公共数据库',
+    url: 'https://portal2023.ecnu.edu.cn/',
+    category: CategoryType.OFFICIAL,
     icon: 'Twitter',
-    description: 'What is happening?!',
+    description: '华师大公共数据库',
     color: 'from-blue-400 to-blue-600'
   },
   {
     id: '6',
-    title: 'YouTube',
-    url: 'https://youtube.com',
-    category: CategoryType.ENTERTAINMENT,
+    title: '大夏学堂',
+    url: 'https://elearning.ecnu.edu.cn/',
+    category: CategoryType.OFFICIAL,
     icon: 'Youtube',
-    description: 'Broadcast Yourself.',
+    description: '大夏学堂在线教学平台',
     color: 'from-red-500 to-red-700'
   },
   {

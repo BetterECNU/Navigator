@@ -16,5 +16,6 @@ export enum CategoryType {
   ENTERTAINMENT = 'Entertainment',
   PRODUCTIVITY = 'Productivity',
   TOOL = '工具',
-  FRIEND = '友链'
+  FRIEND = '友链',
+  OFFICIAL = '华师大官方网站'
 }
