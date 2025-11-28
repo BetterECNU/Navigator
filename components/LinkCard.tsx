@@ -48,7 +48,7 @@ const LinkCard: React.FC<LinkCardProps> = ({ item, index }) => {
       target="_blank"
       rel="noopener noreferrer"
       ref={cardRef}
-      className="relative block group perspective-1000"
+      className="group block relative perspective-1000"
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -59,8 +59,10 @@ const LinkCard: React.FC<LinkCardProps> = ({ item, index }) => {
       {/* Card Container with 3D Transform */}
       <div
         className={`
-          relative h-full p-6 rounded-2xl border border-white/10 overflow-hidden
-          bg-white/5 backdrop-blur-md shadow-xl transition-all duration-200 ease-out
+          relative h-full p-6 rounded-2xl border overflow-hidden
+          bg-white border-slate-200 shadow-lg
+          dark:bg-white/5 dark:border-white/10 dark:shadow-xl
+          backdrop-blur-md transition-all duration-200 ease-out
           group-hover:shadow-2xl group-hover:shadow-${item.color.split('-')[1]}-500/20
           animate-fade-in-up opacity-0
         `}
@@ -72,28 +74,28 @@ const LinkCard: React.FC<LinkCardProps> = ({ item, index }) => {
         }}
       >
         {/* Shimmer Effect */}
-        <div className="absolute inset-0 -translate-x-full group-hover:animate-shimmer bg-gradient-to-r from-transparent via-white/10 to-transparent z-20 pointer-events-none" />
+        <div className="z-20 absolute inset-0 bg-gradient-to-r from-transparent via-slate-400/10 dark:via-white/10 to-transparent -translate-x-full group-hover:animate-shimmer pointer-events-none" />
 
         {/* Background Gradient Glow */}
         <div 
-          className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} 
+          className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-5 dark:group-hover:opacity-10 transition-opacity duration-500`} 
         />
 
-        <div className="relative z-10 flex flex-col h-full" style={{ transform: 'translateZ(20px)' }}>
-          <div className="flex items-start justify-between mb-4">
+        <div className="z-10 relative flex flex-col h-full" style={{ transform: 'translateZ(20px)' }}>
+          <div className="flex justify-between items-start mb-4">
             <div className={`p-3 rounded-xl bg-gradient-to-br ${item.color} shadow-lg`}>
               <IconComponent className="w-6 h-6 text-white" />
             </div>
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white/50">
+            <div className="opacity-0 group-hover:opacity-100 text-slate-400 dark:text-white/50 transition-opacity duration-300">
               <Icons.ExternalLink className="w-5 h-5" />
             </div>
           </div>
           
-          <h3 className="text-xl font-bold text-white mb-1 tracking-tight group-hover:text-cyan-200 transition-colors">
+          <h3 className="mb-1 font-bold text-slate-800 dark:group-hover:text-cyan-200 dark:text-white group-hover:text-cyan-600 text-xl tracking-tight transition-colors">
             {item.title}
           </h3>
           
-          <p className="text-sm text-gray-400 line-clamp-2 group-hover:text-gray-300 transition-colors">
+          <p className="text-slate-500 dark:group-hover:text-gray-300 dark:text-gray-400 group-hover:text-slate-700 text-sm line-clamp-2 transition-colors">
             {item.description}
           </p>
         </div>

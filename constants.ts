@@ -40,11 +40,11 @@ export const MOCK_LINKS: LinkItem[] = [
   },
   {
     id: '3',
-    title: 'Vercel',
-    url: 'https://vercel.com',
-    category: CategoryType.DEVELOPMENT,
-    icon: 'Triangle', // Simulating Vercel Icon
-    description: 'Develop. Preview. Ship.',
+    title: 'Broken Life',
+    url: 'https://broken.life',
+    category: CategoryType.FRIEND,
+    icon: 'Triangle',
+    description: 'zeyi 的个人博客',
     color: 'from-gray-900 to-black'
   },
   {

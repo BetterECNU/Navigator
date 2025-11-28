@@ -15,10 +15,6 @@ export enum CategoryType {
   SOCIAL = 'Social',
   ENTERTAINMENT = 'Entertainment',
   PRODUCTIVITY = 'Productivity',
-  TOOL = '工具'
-}
-
-export interface SearchResult {
-  type: 'LINK' | 'AI_RESPONSE';
-  content: LinkItem | string;
+  TOOL = '工具',
+  FRIEND = '友链'
 }
